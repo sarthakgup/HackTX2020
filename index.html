@@ -15,48 +15,46 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Setting general background image settings -->
-    background:coral
+    
 
     <!-- updating button qualities -->
     <style>
-    
-      background
+  
+      .button
+      {
+          border: none;
+          color: white;
+          padding: 15px 32px;
+      }
 
-    .button
-    {
-        border: none;
+      /* setting up first button */
+      .button1 {background-color: blue;} /* Green */
+      .button1:hover
+      {
+        background-color: red;
         color: white;
-        padding: 15px 32px;
-    }
+      }
 
-    /* setting up first button */
-    .button1 {background-color: blue;} /* Green */
-    .button1:hover
-    {
-      background-color: red;
-      color: white;
-    }
-
-    /* setting up second button */
-    .button2 {background-color: rgb(238, 115, 0);} /* Burnt Orange */
-    .button2:hover
-    {
-      background-color:white;
-      color:rgb(238, 115, 0);
-      outline: rgb(238, 115, 0);
-    }
+      /* setting up second button */
+      .button2 {background-color: rgb(238, 115, 0);} /* Burnt Orange */
+      .button2:hover
+      {
+        background-color:white;
+        color:rgb(238, 115, 0);
+        outline: rgb(238, 115, 0);
+      }
 
     </style>
   </head>
   <body>  
 
     <form action="https://www.usa.gov/" method="get" target="_blank">
-      <button class = "button button 2" type="submit">State of Texas Covid Info</button>
+      <!--<button class = "button button 2" type="submit">State of Texas Covid Info</button>-->
     
 
       <!--<button class ="button button1" onclick="window.location.href = 'https://cnn.com';">National Covid Info</button>-->
       <!-- Link Button code below -->
-      <button type = "submit" formaction = "https://www.usa.gov/" class ="button button2">National Covid Info</button>
+      <button type = "submit" formaction = "https://www.usa.gov/" class ="button button1">National Covid Info</button>
       <button type = "submit" formaction = "https://dshs.texas.gov/news/updates.shtm" class ="button button2">State of Texas Covid Info</button>
     </form>
     
