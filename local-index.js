@@ -2,7 +2,7 @@ const instructions =
 [
     { name: 'Project By: Sarthak Gupta' },
     { name: '\nThe goal is to leave you with helpful resources to stay up to date with COVID Developments' },
-    { name: '\nClick on the different boxes to explore cool resources such as stats, news, and safety tips!' },
+    { name: '\nClick on the different boxes above to explore cool resources such as stats, news, and safety tips!' },
     { name: '\nEnjoy my first web app ever which I built using html and javascript and deployed using Azure \n' },
 ]
 

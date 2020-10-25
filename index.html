@@ -20,6 +20,11 @@
     <!-- updating button qualities -->
     <style>
   
+      body
+      {
+        background-color: lightblue;
+      }
+
       .button
       {
           border: none;
@@ -28,7 +33,12 @@
       }
 
       /* setting up first button */
-      .button1 {background-color: blue;} /* Green */
+      .button1
+      {
+        background-color: blue;
+        margin-top: 400px;
+        margin-left: 450px;
+      }
       .button1:hover
       {
         background-color: red;
@@ -44,6 +54,10 @@
         outline: rgb(238, 115, 0);
       }
 
+      /* setting up third button layout*/
+      .button3 {background-color: transparent;} /* Burnt Orange */
+      
+
     </style>
   </head>
   <body>  
@@ -56,6 +70,9 @@
       <!-- Link Button code below -->
       <button type = "submit" formaction = "https://www.usa.gov/" class ="button button1">National Covid Info</button>
       <button type = "submit" formaction = "https://dshs.texas.gov/news/updates.shtm" class ="button button2">State of Texas Covid Info</button>
+
+      <button type = "submit" formaction = "https://www.cdc.gov/coronavirus/resources.html" class ="button button2">Official CDC Resources</button>
+      <button type = "submit" formaction = "https://coronavirus.jhu.edu/map.html" class ="button button2">Johns Hopkins National Case Map</button>
     </form>
     
 
