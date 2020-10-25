@@ -1,5 +1,6 @@
 <!-- Sarthak Gupta -->
-<!-- Thanks to Brain C. and Cecil P. of MSFT Azure for teaching how to program this in the HackTX Azure Static Web App Development Workshop -->
+<!-- Thanks to Brain C. and Cecil P. of MSFT Azure for their workshop on this in the HackTX Azure Static Web App Development Workshop -->
+<!-- Also, thanks for everyone who put on all the other workshops which all helped a lot -->
 <!-- Date: 10/24/2020 - 10/25/2020 @ HackTX -->
 <!doctype html>
 <html lang="en">
@@ -13,9 +14,14 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+    <!-- Setting general background image settings -->
+    background:coral
+
     <!-- updating button qualities -->
     <style>
     
+      background
+
     .button
     {
         border: none;
@@ -40,19 +46,24 @@
       outline: rgb(238, 115, 0);
     }
 
-
     </style>
   </head>
   <body>  
 
-    <button class ="button button1">Government Covid Info</button>
-    <button class ="button button2">State of Texas Covid Info</button>
+    <form action="https://www.usa.gov/" method="get" target="_blank">
+      <button class = "button button 2" type="submit">State of Texas Covid Info</button>
+    
 
+      <!--<button class ="button button1" onclick="window.location.href = 'https://cnn.com';">National Covid Info</button>-->
+      <!-- Link Button code below -->
+      <button type = "submit" formaction = "https://www.usa.gov/" class ="button button2">National Covid Info</button>
+      <button type = "submit" formaction = "https://dshs.texas.gov/news/updates.shtm" class ="button button2">State of Texas Covid Info</button>
+    </form>
     
 
     <article class="container">
-        <!-- adding Bootstrap container and a list group below && setting id of list to dogs-list -->
-        <ul class="list-group" id="dogs-list">
+        <!-- adding Bootstrap container and a list group below && setting id of list to instructions-list -->
+        <ul class="list-group" id="instructions-list">
         </ul>
     </article>
 

@@ -6,23 +6,23 @@ const instructions =
     { name: '\nEnjoy my first web app ever which I built using html and javascript and deployed on the incredible Azure \n' },
 ]
 
-
-function displayDogs()
+//creating method displayInstructions to run a for each loop and run through and display each element in 'instructions'
+function displayInstructions()
 {
     for (let instruction of instructions)
     {
-        const dogUI = document.createElement('li');
-        dogUI.className = 'list-group-item';
-        dogUI.innerText = instruction.name;
+        const instUI = document.createElement('li');
+        instUI.className = 'list-group-item';
+        instUI.innerText = instruction.name;
 
-        document.getElementById('dogs-list').appendChild(dogUI);
+        document.getElementById('instructions-list').appendChild(instUI);
     }
 }
 
-
 async function main()
 {
-    displayDogs();
+    //Calling displayInstructions method
+    displayInstructions();
 }
 
 main();
